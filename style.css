@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+/* || VARIABLES */
+
+*:root {
+  /* COLOR */
+  --White: hsl(0, 0%, 100%);
+  --Lightgray: hsl(212, 45%, 89%);
+  --Grayishblue: hsl(220, 15%, 55%);
+  --Darkblue: hsl(218, 44%, 22%);
+
+  /* FONTS */
+  --FF: "Permanent Marker";
+  --FS: 15px;
+  --FW1: 400;
+  --FW2: 700;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.chonk {
+  font-size: 2.5rem;
+  color: rgb(255, 217, 0);
+  -webkit-text-stroke: 2px black;
+}
+
+body {
+  background-image: url("/img/chonkbg.jpg");
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
+  font-family: var(--FF);
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+header {
+  width: 100%;
+  font-weight: 900;
+  text-align: center;
+  gap: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 100%;
+}
+
+.bhedCont {
+  width: 100%;
+}
+
+.bhed {
+  max-width: 130px;
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 7rem;
+}
+
+.socials a {
+  width: 100%;
+  max-width: 50px;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.socials a img {
+  width: 100%;
+  max-width: 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav a {
+  padding: 1rem;
+  border: 2.5px solid black;
+  text-decoration: none;
+  color: black;
+  border-radius: 2rem;
+}
+
+.nav .buy {
+  background-color: rgb(255, 217, 0);
+}
+
+.nav .buy:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  background-color: rgb(119, 119, 119);
+  color: white;
+}
+
+.nav .chart:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  background-color: rgb(119, 119, 119);
+}
+
+.tax {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-bottom: 7rem;
+}
+
+.tax .img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.tax p {
+  margin-bottom: 3rem;
+}
+.tax img {
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 7rem;
+}
+.about h1 {
+  font-size: 2rem;
+}
+
+.about p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.buychonk {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.buychonk a {
+  text-align: center;
+  width: 40%;
+  padding: 1rem;
+  border: 2.5px solid black;
+  text-decoration: none;
+  color: black;
+  border-radius: 2rem;
+  background-color: rgb(255, 217, 0);
+  font-size: 1rem;
+}
+
+.buychonk a:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  background-color: rgb(119, 119, 119);
+  color: white;
+}
+.buychonk img {
+  width: 100%;
+}
+
+.tokenomics {
+  background-color: rgb(255, 217, 0);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.tokenomics p {
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.tokenomics h1 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.ownership {
+  width: 100%;
+  position: relative;
+  bottom: 3rem;
+}
+
+.ownership img {
+  width: 100%;
+}
+
+.ownership img:hover {
+  transform: rotate(360deg);
+  transition: transform 3s;
+}
+
+.tokenomics .copybtn {
+  max-width: 20px;
+}
+
+.tokenomics .c {
+  display: none;
+}
+
+.alert {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .about,
+  header,
+  .tokenomics,
+  .tax,
+  .socials,
+  .nav {
+    display: none;
+  }
+
+  .alert {
+    display: block;
+    transform: rotateY(720deg);
+    transition: 10s;
+  }
+}
