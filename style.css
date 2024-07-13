@@ -258,6 +258,9 @@ header img {
 
   .alert {
     display: block;
+  }
+
+  .alert:hover {
     transform: rotateY(720deg);
     transition: 10s;
   }
