@@ -111,6 +111,7 @@ header img {
 
 .nav .buy {
   background-color: rgb(255, 217, 0);
+  white-space: nowrap;
 }
 
 .nav .buy:hover {
@@ -175,7 +176,7 @@ header img {
 
 .buychonk a {
   text-align: center;
-  width: 40%;
+  width: 50%;
   padding: 1rem;
   border: 2.5px solid black;
   text-decoration: none;
